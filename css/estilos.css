@@ -1,0 +1,71 @@
+/* Seção de Introdução */
+.secao-introducao {
+  background: hsla(0, 22%, 93%, 1);
+  background: linear-gradient(45deg, hsla(0, 22%, 93%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+  background: -moz-linear-gradient(45deg, hsla(0, 22%, 93%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+  background: -webkit-linear-gradient(45deg, hsla(0, 22%, 93%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#F1E9E9", endColorstr="#FFFFFF", GradientType=1);
+}
+
+/* Estilo para o botão de ação */
+.botao-de-acao {
+  background-color: #761711;
+  border-radius: 100px;
+  box-shadow: rgba(255, 17, 0, .2) 0 -25px 18px -14px inset, rgba(255, 17, 0, .15) 0 1px 2px, rgba(255, 17, 0, .15) 0 2px 4px, rgba(255, 17, 0, .15) 0 4px 8px, rgba(255, 17, 0, .15) 0 8px 16px, rgba(255, 17, 0, .15) 0 16px 32px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 18px;
+  font-weight: bold;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 0 auto;
+  display: block;
+  max-width: fit-content;
+}
+
+.botao-de-acao:hover {
+  box-shadow: rgba(255, 17, 0, .35) 0 -25px 18px -14px inset, rgba(255, 17, 0, .25) 0 1px 2px, rgba(255, 17, 0, .25) 0 2px 4px, rgba(255, 17, 0, .25) 0 4px 8px, rgba(255, 17, 0, .25) 0 8px 16px, rgba(255, 17, 0, .25) 0 16px 32px;
+  color: white;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+/* Estilização da lista */
+ul li {
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/* Div flutuante */
+.float-container {
+  padding: 20px;
+}
+
+.float-child {
+  width: 50%;
+  float: left;
+  padding: 20px;
+} 
+
+/* if desktop */
+.view-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .float-container {display: none;}
+  .view-mobile {display: block;}
+}
+
+@media only screen and (max-width: 600px) {
+  .view-mobile {margin-left: 10%;
+  margin-right: 10%;}
+}
