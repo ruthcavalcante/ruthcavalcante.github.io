@@ -1,10 +1,14 @@
 /* Seção de Introdução */
 .secao-introducao {
+  background-color: black;
+
+  /*
   background: hsla(0, 22%, 93%, 1);
   background: linear-gradient(45deg, hsla(0, 22%, 93%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
   background: -moz-linear-gradient(45deg, hsla(0, 22%, 93%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
   background: -webkit-linear-gradient(45deg, hsla(0, 22%, 93%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#F1E9E9", endColorstr="#FFFFFF", GradientType=1);
+  */
 }
 
 /* Estilo para o botão de ação */
@@ -53,7 +57,7 @@ ul li {
   width: 50%;
   float: left;
   padding: 20px;
-} 
+}
 
 /* if desktop */
 .view-mobile {
@@ -61,11 +65,18 @@ ul li {
 }
 
 @media only screen and (max-width: 800px) {
-  .float-container {display: none;}
-  .view-mobile {display: block;}
+  .float-container {
+    display: none;
+  }
+
+  .view-mobile {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  .view-mobile {margin-left: 10%;
-  margin-right: 10%;}
+  .view-mobile {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }

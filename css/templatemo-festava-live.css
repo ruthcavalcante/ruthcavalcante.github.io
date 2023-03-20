@@ -10,7 +10,6 @@
   --custom-btn-bg-color:          #EE5007;
   --custom-btn-bg-hover-color:    #c01f27;
   --dark-color:                   #000000;
-  --p-color:                      #717275;
   --border-color:                 #7fffd4;
   --link-hover-color:             #B22727;
 
@@ -87,7 +86,6 @@ h6 {
 }
 
 p {
-  color: var(--p-color);
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-light);
 }
