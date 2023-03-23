@@ -1,14 +1,21 @@
 /* Seção de Introdução */
 .secao-introducao {
   background-color: black;
+}
 
-  /*
-  background: hsla(0, 22%, 93%, 1);
-  background: linear-gradient(45deg, hsla(0, 22%, 93%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
-  background: -moz-linear-gradient(45deg, hsla(0, 22%, 93%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
-  background: -webkit-linear-gradient(45deg, hsla(0, 22%, 93%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
-  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#F1E9E9", endColorstr="#FFFFFF", GradientType=1);
-  */
+/* Seção de Você vai aprender */
+.secao-aprender {
+  background: hsla(351, 100%, 25%, 1);
+  background: linear-gradient(270deg, hsla(351, 100%, 25%, 1) 0%, hsla(9, 59%, 7%, 1) 100%);  
+  background: -moz-linear-gradient(270deg, hsla(351, 100%, 25%, 1) 0%, hsla(9, 59%, 7%, 1) 100%);  
+  background: -webkit-linear-gradient(270deg, hsla(351, 100%, 25%, 1) 0%, hsla(9, 59%, 7%, 1) 100%);  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7f0012", endColorstr="#1b0a07", GradientType=1 );
+}
+
+/* Espaçamento de seção */
+.espacamento-secao {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 /* Estilo para o título do site */
@@ -16,13 +23,23 @@
   font-family: 'Playfair Display', serif;
   font-weight: 600;
   font-style: italic;
+  font-size: 52px;
   color: white;
 }
 
+/* Estilo para o slogan do site */
 .slogan-site {
   font-family: 'Playfair Display', serif;
   font-size: 30px;
-  color: #7f0012
+  color: red;
+}
+
+/* Estilo para o título da seção Você vai aprender */
+.titulo-aprender {
+  font-size: 46px;
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
 }
 
 /* Estilo para o botão de ação */
@@ -62,24 +79,27 @@ ul li {
   font-weight: normal;
 }
 
-/* Div flutuante */
-.float-container {
+/* Conteiner para adicionar as DIVs flutuantes */
+.container-flutuante {
   padding: 20px;
+  width: inherit;
 }
 
-.float-child {
+/* DIV flutuante para vizualização de conteúdo em duas colunas */
+.div-flutuante {
   width: 50%;
   float: left;
   padding: 20px;
 }
 
-/* if desktop */
+/* Desabilita a vizualização dessa DIV */
 .view-mobile {
   display: none;
 }
 
+/* Estilos Responsivos */
 @media only screen and (max-width: 800px) {
-  .float-container {
+  .container-flutuante {
     display: none;
   }
 
@@ -93,6 +113,10 @@ ul li {
 
   .slogan-site {
     font-size: 24px;
+  }
+
+  .titulo-aprender {
+    font-size: 36px;
   }
 }
 
@@ -108,5 +132,9 @@ ul li {
 
   .slogan-site {
     font-size: 20px;
+  }
+
+  .titulo-aprender {
+    font-size: 28px;
   }
 }
