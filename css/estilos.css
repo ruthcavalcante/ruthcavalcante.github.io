@@ -14,24 +14,24 @@
 
 /* Espaçamento de seção */
 .espacamento-secao {
-  padding-top: 80px;
+  padding-top: 40px;
   padding-bottom: 80px;
 }
 
 /* Estilo para o título do site */
 .titulo-site {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-style: italic;
-  font-size: 52px;
+  font-size: 30px;
   color: white;
 }
 
 /* Estilo para o slogan do site */
 .slogan-site {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 30px;
-  color: red;
+  color: white;
+  padding: 0;
 }
 
 /* Estilo para o título da seção Você vai aprender */
